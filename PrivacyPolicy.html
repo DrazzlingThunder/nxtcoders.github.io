@@ -1,0 +1,345 @@
+<html>
+  <style>
+        a {
+        text-decoration: none; /* Removes underline */
+        color: inherit; /* Inherits the text color from its parent */
+    }
+    .page {
+  padding: 40px;
+   
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#splash {
+  background: #0e77b0;
+  background-repeat: repeat-y;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation:splash 3s ease-in;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,0);
+}
+
+#loader:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -8px;
+  bottom: -170px;
+  width: 3px;
+  background: #fff;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+  height: 200px;
+}
+
+#loader:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: 8px;
+  bottom: -190px;
+  width: 3px;
+  background: #000;
+  background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0) 100%);
+  height: 200px;
+}
+
+#splash .anim {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  width: 100px;
+  transform: translate(-50%,100%);
+  animation: loader 5s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes loader {
+  0% {
+    transform: translate(-50%,110%);
+  }
+  30% {
+    transform: translate(-50%,50%);
+  }
+  100% {
+    transform: translate(-50%,0%);
+  }
+}
+
+@keyframes splash {
+  0% {
+    transform: translate(0%,0%);
+  }
+  50% {
+    transform: translate(0%,0%);
+  }
+  100% {
+    transform: translate(0%,-100%);
+  }
+}
+
+    </style>
+
+<div id="splash">
+  <div class="anim">
+    <div id="loader">
+      <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+        <defs>
+          <filter id="f1" x="0" y="0">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+          </filter>
+        </defs>
+        <g id="airplane">
+          <path fill="#000" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+          h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+          c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+          c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+          c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+          C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+        </g>
+        <g id="shadow" transform="scale(.9)">
+          <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+      		h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+      		c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+      		c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+      		c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+      		C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)" filter="url(#f1)" />
+        </g>
+      </svg>
+    </div>
+  </div>
+</div>
+  </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy --NxtCoders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(to right, #0077b6, #00b4d8);
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+    font-size: 24px; /* Slightly smaller font size */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: fadeInUp 1s ease-out;}
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav ul li a:hover {
+            color: #caf0f8;
+            transform: scale(1.1);
+        }
+      nav ul li a::after {
+            content: '';
+            display: block;
+            height: 3px;
+            background: #00b4d8;
+            width: 0;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .auth-buttons a {
+            padding: 10px 20px;
+            color: white;
+            border-radius: 20px;
+            text-decoration: none;
+            background: linear-gradient(90deg, #0077b6, #00b4d8);
+            transition: transform 0.3s;
+        }
+
+        .auth-buttons a:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .about-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .about-container h2 {
+            font-size: 36px;
+            color: #0077b6;
+            margin-bottom: 20px;
+        }
+        .about-container p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        .about-container ul {
+            list-style: disc inside;
+            padding-left: 20px;
+        }
+        .about-container ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .about-container img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .animated-heading {
+            animation: slideIn 1s ease-in-out;
+        }
+        @keyframes slideIn {
+            0% { transform: translateY(-20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+                footer {
+            background: #222;
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-top: 5px solid #00b4d8;
+        }
+
+        footer a {
+            color: #00b4d8;
+            text-decoration: none;
+        }
+
+
+        .social-icons {
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #00b4d8;
+        }
+    </style>
+</head>
+<body>
+     <header>
+        <h1><a href="website.html" style="text-decoration: none" "color:inherit">NxtCoders</a> </h1>
+        <nav>
+            <ul>
+                <li><a href="website.html">Home</a></li>
+                <li><a href="turitorials.html">Tutorials</a></li>
+                <li><a href="About us.html">About</a></li>
+                <li><a href="Contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            
+          <a href="signup.html">Sign Up </a>
+          <a href="signup.html">Log In </a>
+        </div>
+    </header>
+    <section>
+        <div class="about-container">
+            <h2 class="animated-heading">Privacy Policy</h2>
+            <p>WAt NxtCoders, we value your privacy and are committed to protecting your personal information. This Privacy Policy outlines the types of data we collect, how we use it, and the measures we take to ensure your data is secure.</p>
+            <h2 class="animated-heading">Information We Collect</h2>
+            <p>We collect information you provide to us directly, such as when you sign up for an account or contact us. This may include your name, email address, and other relevant details.</p>
+            <h2 class="animated-heading">How We Use Your Information</h2>
+            <ul>
+                <li><strong></strong>We use your information to provide and improve our services, communicate with you, and ensure the best experience on our platform.</li>
+            </ul>
+            <h2 class="animated-heading">Data Security</h2>
+            <p>We take data security seriously and implement industry-standard measures to protect your information from unauthorized access, alteration, or disclosure.</p>
+            <h2 class="animated-heading">Your Rights</h2>
+            <p>You have the right to access, modify, or delete your personal information at any time. For any concerns, please contact our support team.
+
+              By using our website, you consent to the terms outlined in this Privacy Policy. If you have any questions, feel free to contact us.</p>
+            <p>Thank you for choosing NxtCoders as your trusted guide. Let’s embark on this exciting journey!</p>
+        </div>
+    </section>
+        <footer>
+        <p>&copy; 2025 NxtCoders. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_iam_pratyushh_999_?utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/pratyushk897?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/DrazzlingThunder" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
