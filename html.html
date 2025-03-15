@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tutorial - NxtCoders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            background: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            background: #2c3e50;
+            color: white;
+            position: fixed;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            border-bottom: 1px solid #34495e;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            transition: background 0.3s;
+        }
+        .sidebar ul li a:hover {
+            background: #1abc9c;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 20px;
+            width: calc(90% - 270px);
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        pre {
+            background: #333;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>NxtCoders</h2>
+        <h2>HTML Tutorial</h2>
+    
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#headings">Headings</a></li>
+            <li><a href="#text">Text Formatting</a></li>
+            <li><a href="#links">Links</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#tables">Tables</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="card" id="intro">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating webpages.</p>
+        </div>
+        <div class="card" id="headings">
+            <h2>Headings</h2>
+            <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.</p>
+            <pre><code>&lt;h1&gt;This is Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is Heading 2&lt;/h2&gt;</code></pre>
+        </div>
+        <div class="card" id="text">
+            <h2>Text Formatting</h2>
+            <p>Use formatting tags like <code>&lt;b&gt;</code> for bold and <code>&lt;i&gt;</code> for italics.</p>
+            <pre><code>&lt;p&gt;This is &lt;b&gt;bold&lt;/b&gt; and &lt;i&gt;italic&lt;/i&gt; text.&lt;/p&gt;</code></pre>
+        </div>
+        <div class="card" id="links">
+            <h2>Links</h2>
+            <p>Use the <code>&lt;a&gt;</code> tag to create hyperlinks.</p>
+            <pre><code>&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
+        </div>
+        <div class="card" id="images">
+            <h2>Images</h2>
+            <p>Use the <code>&lt;img&gt;</code> tag to display images.</p>
+            <pre><code>&lt;img src="image.jpg" alt="Example Image"&gt;</code></pre>
+        </div>
+        <div class="card" id="tables">
+            <h2>Tables</h2>
+            <p>Create tables using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, and <code>&lt;td&gt;</code> tags.</p>
+            <pre><code>&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+    &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+    </div>
+</body>
+</html>
